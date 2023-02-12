@@ -1,0 +1,215 @@
+body{
+    background-image: url("/images/bg-pattern-bottom-desktop.svg"), url("/images/bg-pattern-top-desktop.svg");
+    background-repeat: no-repeat;
+    font-size: 15px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+:root{
+    
+ --Very-Dark-Magenta: hsl(300, 43%, 22%);
+ --Soft-Pink: hsl(333, 80%, 67%);
+
+ --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+ --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+ --White: hsl(0, 0%, 100%);
+
+}
+
+.container{
+    display: flex;
+    height: 17rem;
+}
+
+.container > *{
+    display: flex;
+    flex: 1 1 0;
+    height: 17rem;
+}
+
+.right-column{
+    flex-direction: column;
+}
+
+.content-card{
+    width: 25rem;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+.content-card > h1{
+    max-width: 15rem;
+    color: var(--Very-Dark-Magenta);
+    font-weight: 800;
+}
+
+.container-paragraph{
+    width: 21rem;
+}
+
+.content-card > p{
+    color: var(--Very-Dark-Magenta);
+}
+
+.container > .right-column{
+    align-items: flex-end;
+    justify-self: center;
+}
+
+
+.card{
+    display: flex;
+    background-color: var(--Light-Grayish-Magenta);
+    border-radius: .3rem;
+    color: var(--Very-Dark-Magenta);
+    font-weight: 600;
+}
+
+.card > *{
+    flex: 1 1 0;
+    width: 10rem;
+    text-align: center;
+    padding: .5rem;
+}
+
+.card > .card-attribution{
+    flex: 2 1 0;
+}
+
+.card:nth-child(1){
+    margin: 3.8rem 6rem .5rem 2rem;
+}
+
+.card:nth-child(2){
+    margin: .5rem 4rem .5rem 2rem;
+}
+
+.card:nth-child(3){
+    margin: .5rem 2.3rem .5rem 2rem;
+}
+
+.attribute-container{
+    display: flex;
+    height: 22rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+.attribute{
+    background-color: var(--Very-Dark-Magenta);
+    border-radius: .6rem;
+}
+.attribute-container > *{
+    display: flex;
+    gap: 1rem;
+    height: 16rem;
+}
+
+.attribute-container > * > *{
+    width: 17.5rem;
+    flex: 0 1 auto;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.attribute-container > * > *:nth-child(1){
+    margin-bottom: 2rem;
+}
+
+.attribute-container > * > *:nth-child(2){
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.attribute-container > * > *:nth-child(3){
+    margin-top: 2rem;
+}
+
+.person{
+    display: flex;
+    height: 3rem;
+}
+
+.attribute > *{
+    margin: 1.3rem;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+.info > *{
+    height: 1rem;
+    padding: 0;
+    margin: 0 0 .3rem .5rem;
+}
+
+.person > img{
+    border-radius: 2rem;
+    width: 2.3rem;
+    height: 2.3rem;
+}
+
+.att-content, .att-name{
+    color: var(--White);
+}
+
+.att-persona{
+    color: var(--Soft-Pink);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+@media screen and (max-width: 870px){
+    body{
+        background-image: url("/images/bg-pattern-top-mobile.svg"), url("/images/bg-pattern-bottom-mobile.svg") 0px 0px;
+        background-attachment: fixed;
+        overflow-x: clip;
+    }
+    *{
+        flex-direction: column;
+    }
+    .attribute {
+       width: 85%;
+       margin: 20rem auto;
+    }
+    .container{
+        text-align: center;
+        margin: 0;
+    }
+    .content-card h1{
+        text-align: center;
+        margin: auto;
+    }
+    .container p{
+        width: 60vw;
+        height: 30vh;
+        margin: auto;
+    }
+    .right-column .card{
+        margin: .4rem auto;
+        width: 100vw;
+    }
+    .card > *{
+        margin: 0 auto;
+    }
+    .person{
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .container p{
+        margin: 1rem 3rem;
+    }
+    .container h1{
+        margin: 1rem 2rem;
+    }
+}
