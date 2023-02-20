@@ -1,0 +1,410 @@
+@font-face {
+  font-family: railway-regural;
+  src: url("/fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: railway-bold;
+  src: url("/fonts/Raleway-Bold.ttf");
+}
+
+@font-face {
+  font-family: opensans-regural;
+  src: url("/fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: opensans-bold;
+  src: url("/fonts/OpenSans-Bold.ttf");
+}
+
+:root {
+  --footer-second: rgba(0, 0, 0, 0);
+  /* intro and email sign up */
+  --Dark-Blue-intro: hsl(217, 28%, 15%);
+  /* main-background */
+  --Dark-Blue-main: hsl(218, 28%, 13%);
+  /* footer background */
+  --Dark-Blue-footer: hsl(216, 53%, 9%);
+  /* testimonials background */
+  --Dark-Blue-testimonials: hsl(219, 30%, 18%);
+  /* inside call-to-action gradient */
+  --Cyan: hsl(176, 68%, 64%);
+  /* inside call-to-action- gradient */
+  --Blue: hsl(198, 60%, 50%);
+  --White: hsl(0, 0%, 100%);
+  --primary-white: hsl(0, 0%, 91%);
+}
+
+body {
+  margin: 0;
+  background-image: url("/images/bg-curvy-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 86rem;
+  background-color: var(--Dark-Blue-intro);
+  background-position: center 30rem;
+  font-size: 14px;
+  font-family: "opensans-regural", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.header h1,
+.productive-header,
+.footer-card-header {
+  font-family: railway-bold;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0.1rem 2rem 2rem;
+}
+
+.logo {
+  flex: 9 1 0;
+}
+
+.nav-link {
+  flex: 1 1 auto;
+}
+
+.nav-link:nth-child(3) {
+  width: 1px;
+  flex: 1 1 auto;
+}
+
+.big-nav-link {
+  width: 1.5rem;
+  flex: 1 1 auto;
+}
+
+.nav-link a {
+  color: var(--primary-white);
+  text-decoration: none;
+}
+
+.nav-link a:hover {
+  color: var(--White);
+  text-decoration: underline;
+}
+
+.header {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  color: var(--White);
+}
+
+.image-container img {
+  height: 25rem;
+  width: 35rem;
+}
+
+.header p {
+  color: var(--primary-white);
+  font-size: 0.8em;
+}
+
+.header .header-btn > a {
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  background-image: linear-gradient(45deg, var(--Cyan), var(--Blue));
+  border-radius: 2rem;
+  padding: 0.6rem 3rem;
+  margin-top: 1rem;
+}
+
+.header .header-btn > a:hover {
+  background-image: linear-gradient(48deg, var(--Cyan) 45%, var(--Blue));
+}
+
+.container {
+  width: 100vw;
+  margin-top: 7rem;
+  background-color: var(--Dark-Blue-main);
+}
+
+.container-top-cards {
+  display: grid;
+  width: 70%;
+  margin: auto;
+  row-gap: 2rem;
+  column-gap: 4rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.top-card {
+  height: 13rem;
+  text-align: center;
+  font-size: 0.65rem;
+}
+
+.top-cards-header {
+  color: var(--White);
+  font-size: 1rem;
+}
+
+.top-cards-paragraph {
+  color: var(--primary-white);
+  max-width: 18rem;
+  margin: auto;
+}
+
+.big-top-card > .top-cards-header {
+  margin-top: 1.3rem;
+}
+
+.productive-cards {
+  display: grid;
+  gap: 2rem;
+  width: 90%;
+  margin: auto;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.productive-card {
+  height: 20rem;
+}
+
+.productive-img {
+  width: 100%;
+  height: 100%;
+}
+
+.productive-header {
+  margin-top: 3rem;
+  color: var(--White);
+  max-width: 15rem;
+}
+
+.productive-link {
+  display: grid;
+  grid-template-columns: 8rem 11rem;
+  align-items: end;
+}
+
+.productive-link a {
+  color: var(--Cyan);
+  text-decoration: none;
+  position: relative;
+  border-bottom: 1px solid var(--Cyan);
+}
+
+.productive-link a:hover {
+  color: var(--White);
+  border-bottom: 1px solid var(--White);
+}
+
+.productive-link:hover .arrow {
+  display: none;
+}
+
+.productive-paragraph {
+  color: var(--primary-white);
+}
+
+.card-container-bottom {
+  background: url("/images/bg-quotes.png") no-repeat;
+  display: grid;
+  width: 88%;
+  height: 14rem;
+  align-items: center;
+  gap: 0.7rem;
+  margin: 6rem auto;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card-bottom {
+  background-color: var(--Dark-Blue-testimonials);
+  width: 16rem;
+  height: 10rem;
+}
+
+.card-bottom-content {
+  margin: 1rem;
+}
+
+.card-content-paragraph {
+  color: var(--primary-white);
+  font-size: 0.8rem;
+}
+
+.card-persona {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 5fr;
+}
+
+.card-persona > img {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.75rem;
+}
+
+.persona-name > p {
+  margin: 0;
+}
+
+.persona-name :nth-child(1) {
+  color: var(--White);
+  font-size: 0.7rem;
+}
+
+.persona-name :nth-child(2) {
+  color: var(--primary-white);
+  font-family: "railway-regural", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 0.5rem;
+}
+
+footer {
+  height: 30rem;
+  background-image: linear-gradient(
+    var(--footer-second) 15%,
+    var(--Dark-Blue-footer) 15%
+  );
+}
+
+.footer-card {
+  background-color: var(--Dark-Blue-main);
+  width: 60%;
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.2);
+  height: 11rem;
+  margin: 5rem auto;
+}
+
+.footer-card-content {
+  text-align: center;
+  font-size: 0.7rem;
+  padding: 0.3rem;
+  width: 85%;
+  height: 100%;
+  margin: auto;
+}
+
+.footer-card-header {
+  color: var(--White);
+  font-size: 1.5rem;
+}
+
+.footer-card-paragraph {
+  color: var(--primary-white);
+}
+
+.sign-up {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+
+input {
+  border: none;
+  flex: 2 1 0;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+
+.footer-btn {
+  background-image: linear-gradient(45deg, var(--Cyan), var(--Blue) 40%);
+  padding: 0.7rem 1.3rem;
+  border-radius: 2rem;
+}
+
+.footer-btn a {
+  color: var(--White);
+  text-decoration: none;
+}
+
+::placeholder {
+  font-size: 0.7rem;
+  color: hsl(0, 0%, 76%);
+}
+
+.footer-bottom-content {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.location-info {
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+}
+
+.location {
+  margin-top: 1.1rem;
+}
+
+.info-paragraph,
+.info-link {
+  color: var(--primary-white);
+}
+
+.info-link > a {
+  color: var(--primary-white);
+  text-decoration: none;
+}
+
+.link-icon {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 6fr;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url("/images/bg-curvy-mobile.svg");
+    background-position: 1px 31rem;
+    background-size: 100vw;
+  }
+  .logo {
+    flex: 4 1 0;
+    padding-top: 0.3rem;
+  }
+  .logo > img {
+    width: 6rem;
+    height: 2rem;
+  }
+
+  .header {
+    margin: 0 5vw;
+    width: 90%;
+  }
+  .image-container > img {
+    width: 15rem;
+    height: 10rem;
+  }
+  .card-container-bottom {
+    margin-bottom: 25rem;
+    margin-top: 5rem;
+  }
+  .container-top-cards,
+  .productive-cards,
+  .card-container-bottom,
+  .footer-bottom-content {
+    grid-template-columns: 1fr;
+  }
+  footer {
+    height: 50vw;
+  }
+  .footer-card {
+    width: 100%;
+    height: 15rem;
+  }
+  input,
+  .sign-up {
+    display: block;
+    width: 100%;
+  }
+  .footer-btn {
+    width: 79vw;
+    margin-top: 1rem;
+  }
+}
