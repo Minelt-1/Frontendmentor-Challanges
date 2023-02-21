@@ -1,0 +1,317 @@
+@font-face {
+  font-family: "regural";
+  src: url("/fonts/BaiJamjuree-Regular.ttf");
+}
+
+:root {
+  --Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+  --footer: hsl(201, 11%, 97%);
+}
+
+body {
+  margin: 0;
+  font-size: 18px;
+  font-family: "regural", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.paragraph,
+.card-btm-paragraph {
+  color: var(--Grayish-Blue);
+}
+
+.header {
+  background: url("/images/bg-header-desktop.png") 1px 1px / 75rem 13rem
+    no-repeat;
+  object-fit: cover;
+}
+
+.header-content {
+  font-size: 0.85rem;
+  width: 50%;
+  margin: auto;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.header-content img {
+  height: 5rem;
+  width: 5rem;
+}
+
+.header-header,
+.clipboard-header {
+  color: var(--Dark-Grayish-Blue);
+}
+
+.header-paragraph {
+  color: var(--Grayish-Blue);
+  font-size: 0.7em;
+  max-width: 26rem;
+  margin: auto;
+}
+
+.btn-header a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.btn-download-ios a {
+  background-color: var(--Cyan);
+  box-shadow: 2px 2px 10px 2px rgba(38, 186, 164, 0.3);
+  border-bottom: 2px outset var(--Cyan);
+}
+
+.btn-download-mac a {
+  background-color: var(--Light-Blue);
+  box-shadow: 2px 2px 10px 2px rgba(97, 115, 255, 0.3);
+  border-bottom: 2px outset var(--Light-Blue);
+}
+
+.btn-download-mac a:hover {
+  background-color: rgba(97, 115, 255, 0.8);
+}
+
+.btn-download-ios a:hover {
+  background-color: rgba(38, 186, 164, 0.8);
+}
+
+.btn-container {
+  display: flex;
+  width: 70%;
+  margin: 2rem auto;
+}
+
+.btn-header {
+  flex: 1 1 0;
+}
+
+.header-second-content {
+  margin: 4rem auto 3rem auto;
+}
+
+.header__paragraph {
+  max-width: 30rem;
+}
+
+.second-h-header {
+  font-size: 1em;
+}
+
+.top-content-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 0.7em;
+}
+
+.top-content-image img {
+  width: 90%;
+  height: 100%;
+  margin-left: -1rem;
+}
+
+.top-content-card {
+  width: 57%;
+  height: 32%;
+}
+
+.card-top-heading {
+  font-size: 1.1em;
+  color: var(--Dark-Grayish-Blue);
+}
+
+.top-content_content {
+  padding: 2rem 0rem 4rem 0;
+}
+
+.clipboard-container {
+  padding: 3.5rem 1rem 1rem 1rem;
+  width: 53%;
+  text-align: center;
+  font-size: 0.6em;
+  margin: auto;
+}
+
+.clipboard-header {
+  font-size: 1.2rem;
+}
+
+.clipboard-image {
+  width: 60%;
+  margin: auto;
+  padding: 4rem 0rem 2rem 0rem;
+}
+
+.clipboard-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-bottom-container {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.card-btm-content {
+  width: 80%;
+  margin: auto;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.card-btm {
+  height: 100%;
+  text-align: center;
+  font-size: 0.7em;
+}
+
+.card-btm-heading {
+  font-size: 1.2em;
+  color: var(--Dark-Grayish-Blue);
+}
+
+.first-card-btm {
+  margin-bottom: 1rem;
+}
+
+.card-last {
+  margin-bottom: 0.2rem;
+}
+
+.company-card-container {
+  width: 100%;
+  height: 5rem;
+}
+
+.company-cards {
+  width: 90%;
+  height: 70%;
+  margin: auto;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.com-card > img {
+  width: 85%;
+  height: 2rem;
+}
+
+.second-clip-heading {
+  font-size: 0.7rem;
+}
+
+.second-clip-paragraph {
+  max-width: 25rem;
+  margin: auto;
+}
+
+.btn-con-fot {
+  width: 50%;
+}
+
+footer {
+  background-color: var(--footer);
+  display: grid;
+  align-items: center;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  padding: 1rem;
+}
+
+.footer-item > li {
+  list-style: none;
+  font-size: 0.3em;
+}
+
+.footer-item > li > a {
+  color: var(--Dark-Grayish-Blue);
+  text-decoration: none;
+}
+
+.footer-item > li > a:hover {
+  color: var(--Cyan);
+}
+
+.footer-img > img {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 10rem;
+}
+
+@media screen and (max-width: 670px) {
+  * {
+    font-size: 1.2rem;
+  }
+  .header {
+    background: url("/images/bg-header-desktop.png") 1px 1px / 100% 20rem
+      no-repeat;
+  }
+  .header-content {
+    width: 90%;
+  }
+  .top-content-image{
+    margin-left: 1rem;
+  }
+  .card-btm-content,
+  .company-cards,
+  .top-content-container,
+  .btn-container {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .btn-header a {
+    margin-bottom: 1rem;
+    padding: 0.6rem 6rem;
+    font-size: 0.7rem;
+  }
+  .top-content-container > * > * {
+    margin: 3rem auto;
+    width: 90%;
+  }
+  .clipboard-container,
+  .clipboard-image {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .bottom-clipboard {
+    margin-top: 20rem;
+    width: 90%;
+    margin: 20rem auto 0 auto;
+  }
+  .com-card {
+    margin-top: 2rem;
+  }
+  .com-card > img {
+    width: 6rem;
+    height: 1.6rem;
+  }
+  .footer-item > img {
+    margin: auto;
+    width: 3rem;
+    height: 3rem;
+  }
+  .footer-item > li {
+    margin-top: 2rem;
+  }
+  footer {
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 1rem 0;
+  }
+  .card-btm {
+    margin-top: 4rem;
+  }
+}
